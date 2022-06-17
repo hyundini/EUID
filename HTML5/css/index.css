@@ -33,8 +33,38 @@ body{
 }
 /* 헤더*/
 .header{
-  background:darkblue;
-  color: #fff;
+  background:#fff
+  position: relative;
+  padding
+  border-radius: 0 0 15px 15px
+}
+/* 로고*/
+.logo{
+  position: absolute;
+  left: 65px;
+  right: 45px;
+}
+
+/* 멤버 서비스 */
+.member-service{
+  padding: 4px 0;
+  text-align: right;
+}
+
+.member-service li{
+  display: inline-block;
+}
+
+.member-service span{
+  display: inline-block;
+  padding: 0 5px 0 2px;
+}
+
+.member-service a{
+  background: green;
+  display: inline-block;
+  padding: 6px 0;
+  text-transform: uppercase;
 }
 
 /* 비주얼*/
