@@ -31,13 +31,15 @@ body{
   width: 940px;
   margin: 0 auto;
 }
+
 /* 헤더*/
 .header{
-  background:#fff
+  background:#fff;
   position: relative;
-  padding
+  padding:0;
   border-radius: 0 0 15px 15px
 }
+
 /* 로고*/
 .logo{
   position: absolute;
