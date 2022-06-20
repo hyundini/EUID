@@ -7,8 +7,7 @@ html{
 }
 
 /* 숨김 콘텐츠 */
-.sr-only{
-background: yellow;
+.sr-only, legend{
 position: absolute;
 width: 1px;
 height: 1px;
@@ -226,9 +225,10 @@ left: 0;
 }
 
 
-.visual::after{background-image: url(./images/ani_flower_03.png),url(./images/ani_flower_04.png);
+.visual::after{
+  background-image: url(./images/ani_flower_03.png),url(./images/ani_flower_04.png);
   background-position: 300px 0, 800px 0;
-animation-delay: 1000ms;
+  animation-delay: 1000ms;
 }
 
 .visual-text{
@@ -242,7 +242,8 @@ animation-delay: 1000ms;
 
 /* 메인 콘텐츠*/
 .main{
-  background-color: aqua;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0 ;
   min-height: 400px;
   display: flex;
   flex-flow: row nowrap;
@@ -251,19 +252,95 @@ animation-delay: 1000ms;
 }
 
 .group1{
-  background-color: yellow;
   width: 250px;
 }
 
 .group2{
-  background-color: lime;
   width: 380px;
 }
 
 .group3{
-  background: orange;
   width: 190px;
 }
+/* 로그인 */
+.login{
+  border-radius: 5px;
+  padding: 10px;
+  background-image: radial-gradient(circle at right top, orange, orangered);
+  box-shadow: 5px 5px 0 0 #ccc;
+}
+
+.login-title{
+  color:#ff0;
+  font-size:1.5rem;
+  font-weight: 700;
+  text-indent: 10px;
+}
+
+.login-form{
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset{
+  padding-bottom: 5px;
+  position: relative;
+border-bottom: 1px solid #aaa;
+}
+
+.login-form div{
+  margin-bottom: 5px;
+}
+
+.login-form label{
+  width: 4em;
+  display: inline-block;
+}
+
+.login-form input{
+  width: 90px;
+  height: 22px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  padding: 2px 2px 2px 0.5em;
+}
+.login-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: orangered;
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 0 5px;
+  border: 0;
+  border-radius: 5px;
+}
+
+
+.sign{
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 10px ;
+  letter-spacing: -0.1rem;
+}
+
+.sign a{
+  display: block;
+  padding: 6px 0;
+}
+
+.sign .icon-right-open::before{
+  color: coral;
+}
+
 
 /* 슬로건*/
 .slogan{
