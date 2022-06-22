@@ -262,6 +262,7 @@ left: 0;
 .group3{
   width: 190px;
 }
+
 /* 로그인 */
 .login{
   border-radius: 5px;
@@ -306,6 +307,7 @@ border-bottom: 1px solid #aaa;
   border-radius: 3px;
   padding: 2px 2px 2px 0.5em;
 }
+
 .login-button {
   position: absolute;
   top: 0;
@@ -319,7 +321,6 @@ border-bottom: 1px solid #aaa;
   border: 0;
   border-radius: 5px;
 }
-
 
 .sign{
   background: #fff;
@@ -341,18 +342,39 @@ border-bottom: 1px solid #aaa;
   color: coral;
 }
 
+/* 유효성 검사 배너*/
+.validation{
+  margin-top: 25px;
+}
+
+.validation-list{
+  margin-top: 25px;
+}
+
+.validation-list li{
+  margin-top: 10px;
+}
+
+.validation-list a{
+  background: #ccc url(./images/validation_icon.png) no-repeat 20px 50%; 
+  border: 1px solid #aaa;
+  display: block;
+  padding-left: 50px;
+  line-height: 30px;
+  border-radius: 30px;
+}
 
 /* 슬로건*/
 .slogan{
   background-color: coral;
   height: 10vh;
 }
+
 /* 푸터*/
 .footer{
   background: 
   #ccc linear-gradient(to bottom,#aaa, #fff)
 }
-
 
 .footer-inner{
   background-color: skyblue;
