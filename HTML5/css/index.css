@@ -363,6 +363,49 @@ border-bottom: 1px solid #aaa;
   line-height: 30px;
   border-radius: 30px;
 }
+/* 웹 관련 용어*/
+.term{
+  background: #ccc linear-gradient(to bottom, #ccc, #eee);
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 15px;
+}
+.term-title{
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.term-list{
+  margin-top: 15px;
+}
+
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.term-list-subject, .term-list-brief{
+  float: right;
+  width: 145px;
+}
+
+.term-list-subject{
+  float: right;
+  width: 145px;
+  color: #296897;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.term-list-thumbnail{
+  float: left;
+}
+
+.term-list-brief{
+  line-height: 1.5;
+}
 
 /* 슬로건*/
 .slogan{
