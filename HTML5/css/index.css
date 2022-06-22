@@ -522,7 +522,7 @@ margin: 0 15px;
 
 .news::before{
   content: "";
-  background: blue linear-gradient(to right, #aaa, #fff);
+  background: #aaa linear-gradient(to right, #aaa, #fff);
   position: absolute;
   top: 30px;
   left: 0;
