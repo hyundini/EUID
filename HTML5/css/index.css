@@ -30,8 +30,7 @@ a{
 
 body{
   background: url(./images/bg_flower.png)no-repeat 50% 0, 
-  #ccc linear-gradient(to bottom,#aaa, #fff)
-  ;
+  #ccc linear-gradient(to bottom,#aaa 0%, #eee 50%, #fff 70%, #fff 100%);
   color: #111;
   font-size: 1.4rem;
   font-weight: 400;
@@ -767,11 +766,49 @@ grid-template-columns: 200px 1fr;
 
 /* 푸터*/
 .footer{
-  background: 
-  #ccc linear-gradient(to bottom, #aaa, #fff)
+  background: #ccc linear-gradient(to bottom, #aaa, #fff);
+  padding: 20px 0;
 }
 
 .footer-inner{
-  background-color: skyblue;
-  height: 10vh;
+display: grid;
+grid-template-columns: 200px 1fr 150px;
+}
+
+.footer-logo{
+  grid-area: 1/1/4/2;
+  align-self: center;
+  justify-self: center;
+}
+
+.guide-list{
+  grid-area: 1/2/2/3;
+  background: #7b8385;
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding: 2px 10px;
+}
+
+.guide-list a{
+  display: block;
+  padding: 8px 10px;
+}
+
+.address{
+  grid-area: 2/2/3/3;
+  margin: 10px 0;
+}
+
+.copyright{
+  grid-area: 3/2/4/3;
+}
+
+.badge{
+  grid-area: 1/3/4/4;
+  align-self: center;
+  justify-self: center;
 }
