@@ -662,6 +662,61 @@ margin: 10px 0;
 }
 
 /* 인기사이트 */
+.favorite{
+  margin-top: 20px;
+  position: relative;
+}
+
+.favorite-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.favorite-list{
+  margin-top: 10px;
+  list-style: none;
+}
+
+.favorite-list li{
+  counter-increment: number;
+  margin-top: 8px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items:center;
+}
+
+.favorite-list li::before{
+  content: counter(number);
+  color: #fff;
+  background: #aaa;
+  padding: 2px 5px;
+  border-radius: 2px;
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+
+.up, .stop, .down{
+  background-image: url(./images/rank.png) no-repeat 0 0;
+  width: 9px;
+  height: 11px;
+  margin-left: auto;
+}
+
+.stop{
+  background-position: 0 50%;
+}
+
+.down{
+  background-position: 0 100%;
+}
+
+.favorite-more{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 
 /* 슬로건*/
 .slogan{
