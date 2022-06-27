@@ -575,9 +575,97 @@ margin-bottom: 15px;
   padding: 8px;
 }
 
+/* 공통 스타일 (클래스 모듈) */
+.gradient-effect{
+  background: linear-gradient(to bottom, #ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.spacing-default{
+  padding: 10px;
+}
+
+.accent-color{
+  color: #ed555f;
+}
+
+.shadow-effect{
+  box-shadow: 5px 5px 0 0 #999;
+  border: 1px solid #999;
+  display: inline-block;
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.event-title, .related-title{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.event{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.event-buttons{
+height: 18px;
+overflow: hidden;
+}
+
+.event-button-prev, .event-button-next{
+  border: 0;
+  padding: 18px 0 0 0;
+  background: url(./images/backpage_forwardpage.png) no-repeat 0 0;
+  width: 19px;
+}
+
+.event-button-next{
+  background-position: -36px 0;
+}
+
+.event-detail{
+width: 100%;
+margin: 10px 0;
+}
+
+.event-brief{
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.related{
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+
+.related-list{
+  background: #fff;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 200ms, padding-top 200ms, padding-bottom 200ms;
+}
+
+.related-list:hover, .related-list:focus{
+  height: 147px;
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
+.related-list a{
+  display: block;
+  line-height: 25px;
+  text-indent: 25px;
+}
+
+/* 인기사이트 */
+
 /* 슬로건*/
 .slogan{
-  background-color: coral;
+  background: coral;
   height: 10vh;
 }
 
