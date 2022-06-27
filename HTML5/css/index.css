@@ -697,7 +697,7 @@ margin: 10px 0;
 
 
 .up, .stop, .down{
-  background-image: url(./images/rank.png) no-repeat 0 0;
+  background: url(./images/rank.png) no-repeat 0 0;
   width: 9px;
   height: 11px;
   margin-left: auto;
@@ -720,9 +720,50 @@ margin: 10px 0;
 
 /* 슬로건*/
 .slogan{
-  background: coral;
-  height: 10vh;
+display: grid;
+grid-template-columns: 200px 1fr;
 }
+
+.slogan-title{
+  width: 110px;
+  height: 83px;
+  justify-self: center;
+  transform: translateY(2rem);
+  position: relative;
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan-title::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(./images/coffee.png) no-repeat 0 0;
+}
+
+
+.slogan-content{
+  align-self: end;
+  margin-right: 100px;
+  color: #a09784;
+  font-size: 1.3rem;
+}
+
+.slogan-content q::before{
+  display: inline-block;
+  font-size: 3rem;
+  transform: translateY(1.2rem);
+}
+
+.slogan-content q::after{
+  content: "";
+}
+
 
 /* 푸터*/
 .footer{
