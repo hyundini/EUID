@@ -44,12 +44,41 @@ body{
   margin-top: var(--spacing-base);
 }
 
+.searchForm__group{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.searchForm__group .formInput{
+  margin-right: var(--spacing-base);
+}
+
+/* 공통 입력 서식 스타일 */
+.formInput__input{
+  border: 1px solid var(--silver);
+  background: var(--white);
+  border-radius: 4px;
+  height: 2rem;
+  width: 100%;
+  padding: 0.12rem 0.75rem;
+}
+
+.formInput__input{
+  border: 1px solid var(--silver);
+  background: var(--white);
+  border-radius: 4px;
+  height: 2rem;
+  padding: 0.125rem 0.75rem;
+  width: 100%;
+}
+
 /* 공통 버튼 스타일 */
 .button{
   cursor: pointer;
   padding: 0.125rem 0.75rem;
   height: 2rem;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .button--none{
@@ -76,6 +105,12 @@ body{
     background: pink;
   }
 
+  /* 모바일 검색폼 */
+  .searchForm .formInput{
+    flex-grow: 1;
+  }
+}
+
   /* 모바일 헤더 */
   .appHeader{
     background: var(--primary-color);
@@ -86,7 +121,7 @@ body{
   .memberOnly{
     font-size: var(--text-regular);
   }
-}
+
 
 /* 모바일 디바이스 (Desktop Device */
 @media(min-width:768px){
@@ -108,6 +143,15 @@ body{
     top: 50%;
     transform: translateY(-50%) ;
   }
+  
+  /* 데스크탑 검색폼 */
+.searchForm__group{
+  justify-content: flex-end;
+}
+.searchForm__group .formInput{
+  width: 400px;
+}
+
 
   /* 데스크탑 메인메뉴 제어 버튼 */
   .button--burger{
