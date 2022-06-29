@@ -119,18 +119,19 @@ input[type="search"]{
     position: absolute;
     right: var(--spacing-medium);
     top: 3.5rem;
-    width: 2rem;
-    height: 2rem;
-    background: blue;
+    width: 1.5rem;
+    height: 1.5rem;
+    overflow: hidden;
   }
   
   .button--burgerBarTop, .button--burgerBarMiddle, .button--burgerBarBottom{
     width: 100%;
-    height: 20%;
+    height: 10%;
     background: var(--white);
     border-radius: 16px;
     left: 0;
     position: absolute;
+    transition: all 200ms;
   }
   
   .button--burgerBarTop{
@@ -143,6 +144,18 @@ input[type="search"]{
   .button--burgerBarBottom{
     top: 100%;
     transform: translateY(-100%) ;
+  }
+  .is--active .button--burgerBarTop{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .is--active .button--burgerBarMiddle{
+    top: 50%;
+    transform: translate(-110%, -50%);
+  }
+  .is--active .button--burgerBarBottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
   }
 }
 
@@ -186,7 +199,6 @@ input[type="search"]{
 .searchForm__group .formInput{
   width: 400px;
 }
-
 
   /* 데스크탑 메인메뉴 제어 버튼 */
   .button--burger{
