@@ -57,11 +57,13 @@ body{
 .formInput__input{
   border: 1px solid var(--silver);
   background: var(--white);
-  border-radius: 4px;
+  border-radius: 4px !important;
   height: 2rem;
-  width: 100%;
   padding: 0.12rem 0.75rem;
+  width: 100%;
 }
+
+
 
 .formInput__input{
   border: 1px solid var(--silver);
@@ -108,6 +110,35 @@ body{
   /* 모바일 검색폼 */
   .searchForm .formInput{
     flex-grow: 1;
+  }
+
+  /* 모바일 메인메뉴 제어 버튼 */
+  .button--burger{
+    position: absolute;
+    right: var(--spacing-medium);
+    top: 3rem;
+    width: 48px;
+    height: 48px;
+    background: blue;
+  }
+  
+  .button--burgerBarTop, .button--burgerBarMiddle, .button--burgerBarBottom{
+    width: 100%;
+    height: 20%;
+    background: white;
+    border-radius: 10px;
+    left: 0;
+    position: absolute;
+  }
+  
+  .button--burgerBarTop{
+    top: 0%;
+  }
+  .button--burgerBarMiddle{
+    top: 
+  }
+  .button--burgerBarBottom{
+    top:
   }
 }
 
