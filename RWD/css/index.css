@@ -104,10 +104,10 @@ input[type="search"]{
 }
 
 /* 공통 메인 콘텐츠 */
-.main{
+.appMain{
   padding: var(--spacing-md);
 }
-.main section, .main article{
+.appMain section, .appMain article{
   min-height: 200px;
   background: #fff;
 }
@@ -271,7 +271,7 @@ input[type="search"]{
     font-size: var(--text-medium);
   }
   /* 모바일 메인 콘텐츠 */
-  .main{
+  .appMain{
     display: flex;
     flex-flow: column nowrap;
     gap:var(--spacing-md);
@@ -335,9 +335,42 @@ input[type="search"]{
     font-weight: 700;
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
   }
+
+  /* 데스크탑 메인 콘텐츠 */
+  .appMain{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "news news news news news news news news news news news news"
+    "book book book book favorite favorite favorite twitter twitter twitter twitter twitter"
+    "book book book book . board board board board board board board";
+    gap:var(--spacing-regular);
+  }
+  
 }
 
-
+/* 데스크탑 추천서적 */
+.book{
+  grid-area: book;
+}
+/* 데스크탑 새소식 */
+.news{
+  grid-area: news;
+}
+/* 데스크탑 게시판 */
+.board{
+  grid-area: board;
+}
+/* 데스크탑 인기사이트*/
+.favorite{
+  grid-area: favorite;
+}
+/* 데스크탑 트위터 */
+.twitter{
+  grid-area: twitter;
+}
 /* 고해상도 배상이미지 */
 @media(-webkit-min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
