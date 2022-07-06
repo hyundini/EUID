@@ -157,19 +157,17 @@ input[type="search"]{
     top: 50%;
     transform: translateY(-50%) rotate(-45deg);
   }
-}
-
   /* 모바일 헤더 */
   .appHeader{
     background: var(--primary-color);
-    color: var(--white);
   }
-
+  
   /* 모바일 멤버 서비스 */
   .memberOnly{
+    color: var(--white);
     font-size: var(--text-regular);
   }
-
+}
 
 /* 모바일 디바이스 (Desktop Device */
 @media(min-width:768px){
