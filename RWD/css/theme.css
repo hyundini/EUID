@@ -18,10 +18,12 @@
   --accent-board: var(--brown);
   --accent-favorite: var(--orange);
   --accent-twitter: var(--blue);
-
+  
+  --spacing-xs: 0.5rem; 
+  --spacing-sm: 0.75rem;
   --spacing-base: 1rem;
-  --spacing-medium: 1.5rem;
-  --spacing-large: 2rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
 
   --text-small: 0.75rem;
   --text-regular: 0.875rem;

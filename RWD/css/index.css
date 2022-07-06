@@ -14,7 +14,7 @@ body{
   position: relative;
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--spacing-base) var(--spacing-medium);
+  padding: var(--spacing-base) var(--spacing-md);
 }
 
 /* 공통 로고 */
@@ -104,7 +104,7 @@ input[type="search"]{
 }
 
 /* 모바일 디바이스 (Mobile Device */
-@media(min-width:320px) and (max-width: 767px){
+@media(min-width:320px) and (max-width: 768px){
   body{
     background: pink;
   }
@@ -117,7 +117,7 @@ input[type="search"]{
   /* 모바일 메인메뉴 제어 버튼 */
   .button--burger{
     position: absolute;
-    right: var(--spacing-medium);
+    right: var(--spacing-md);
     top: 3.5rem;
     width: 1.5rem;
     height: 1.5rem;
@@ -204,7 +204,35 @@ input[type="search"]{
   .button--burger{
     display: none;
   }
+
+  /* 데스크탑 메인 메뉴 */
+  .menu{
+    background: var(--secondary-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .menu__list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-width);
+    margin: 0 auto;
+  }
+
+  .menu__item{
+  }
+
+  .menu__link{
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    color: var(--white);
+    font-size: var(--text-medium);
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  }
 }
+
 
 /* 고해상도 배상이미지 */
 @media(-webkit-min-device-pixel-ratio: 2),
